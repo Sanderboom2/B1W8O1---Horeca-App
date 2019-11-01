@@ -1,0 +1,18 @@
+body{
+	font-size: 30px;
+	color: black;
+	background-image: url(background.jpg);
+	background-size: cover;
+}
+
+h1{
+	font-size: 50px;
+}
+.a{
+	width: 450px;
+	height: 675px;
+	margin: 0 auto;
+	background-image: url(background2.jpg);
+	background-size: cover;
+	padding: 20px;
+}
