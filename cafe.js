@@ -4,7 +4,7 @@ function bestel(){
 	const wp = 3;
 	const ba = 2;
 	const bz = 4;
-	for (a=1; a<=25; a++){
+	while (true){
 		var bestel = prompt('Wat wilt u bestellen? (drinken of snacks)? Wilt u de rekening type dan (stop).')
 		if (bestel == 'drinken'){	
 			var drank = prompt('Wat wilt u drinken? Kies uit: (bier, fris of wijn)?')
@@ -34,9 +34,10 @@ function bestel(){
 		}//else if snacks
 		else if (bestel == 'stop'){
 			var tot = bier*bp + fris*fp + wijn*wp + acht*ba + zestien*bz;
+			document.write('<hr>')
 			document.write('Totaalprijs \u20AC' + tot);
 		 	return false;
 		}//else if stop
-	}//for loop a
+	}//while loop
 }//function
 bestel();
